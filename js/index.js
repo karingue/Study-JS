@@ -1,7 +1,15 @@
-var v1, v2, v3;
+function soma(valor1, valor2){
+    
 
-v1 = 10;
-v2 = "10";
+    return valor1 + valor2;
+}
 
-total = (v1 === v2); //Verifica se o tipo da variavel é igual
-console.log(total)
+function realParaDolar(real,cotacaoDolar){
+    return real *cotacaoDolar;
+}
+
+var valorReal = 7.89;
+var cotacao = 5.08;
+
+var total = realParaDolar(valorReal,cotacao);
+alert("O valor em real é R$: "+valorReal + " o valor em dollar U$ é: " + total);
