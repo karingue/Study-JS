@@ -1,7 +1,11 @@
-var v1, v2, v3;
+const lista = ["arroz","feijao","macarrao","leite"];
 
-v1 = 10;
-v2 = "10";
+const lista2 = new Array("arroz", "feijao", "macarrao", "leite");
+lista2[0] = "Café";
+console.log(lista2);
 
-total = (v1 === v2); //Verifica se o tipo da variavel é igual
-console.log(total)
+const pessoa = ["Gabriel", "Karing",20,"Aluno"];
+pessoa.shift();
+
+document.getElementById("texto").innerHTML = pessoa.join(" * "); 
+ 
