@@ -1,15 +1,12 @@
-function soma(valor1, valor2){
-    
+const carro = {
+    marca:"ford", 
+    modelo:"ka", 
+    ano:2015, 
+    placa:"ABC-1234",
+    buzina: function() { alert("Biiiiiiiiiiiii")},
+    completo:function(){
+        return "A marca é " +this.marca+" e o modelo é: " +this.modelo;
+    }
+};
 
-    return valor1 + valor2;
-}
-
-function realParaDolar(real,cotacaoDolar){
-    return real *cotacaoDolar;
-}
-
-var valorReal = 7.89;
-var cotacao = 5.08;
-
-var total = realParaDolar(valorReal,cotacao);
-alert("O valor em real é R$: "+valorReal + " o valor em dollar U$ é: " + total);
+console.log(carro.completo()); 
