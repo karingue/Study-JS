@@ -1,10 +1,13 @@
-const numeros = [40,100,1,5,25,10];
-const maior20 = numeros.filter(filtragem);
+function verificar(){
+    let nome = document.getElementById("nome").value;
 
-function filtragem(value, index, array){
-    return value > 20;
+    if(nome == "" || nome==null){
+    let p = document.getElementById("teste");
+        p.innerHTML = "O campo não pode ser vazio";
+        p.style.color = "red";
+    }else{
+        let p = document.getElementById("teste");
+        p.innerHTML = "Parabens tudo certo!";
+        p.style.color = "green";
+    }
 }
-
-
-
-document.getElementById("texto").innerHTML = maior20; 
