@@ -9,16 +9,25 @@
     body{
         text-align: center;
     }
+    .start{
+        background: green;
+        width: 200px;
+        height: 150px;
+    }
+    
+    .stop{
+        background: tomato;
+        width: 200px;
+        height: 150px;
+    }
 </style>
 <body>
-    <h1>Aprendendo JavaScript</h1>
-    <p id="teste"></p>
-    <select id="ano">
-        <option selected disabled>Selecione o ano</option>
-        
+    <h1>Aprendendo JavaScript</h1><br><br>
+    <h2>Controle de tempo</h2>
+    <h3 id="tempo">10</h3>
+    <button onclick="ativarContagem()" class="start">Ativar Contagem</button>
+    <button onclick="pararContagem()" class="stop">Parar Contagem</button>
 
-
-    </select>    
     <script src="js/index.js"></script>
 </body>
 </html>
